@@ -9,8 +9,8 @@ app = FastAPI(title="Drowsiness Detection Backend")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -21,16 +21,12 @@ predictor.load_model()
 
 @app.get("/")
 def home():
-    return {
-        "message": "Drowsiness Detection backend is running"
-    }
+    return {"message": "Drowsiness Detection backend is running"}
 
 
 @app.get("/health")
 def health():
-    return {
-        "status": "ok"
-    }
+    return {"status": "ok"}
 
 
 @app.post("/predict")
