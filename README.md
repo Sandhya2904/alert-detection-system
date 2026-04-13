@@ -1,3 +1,25 @@
-# Drowsiness-Detection-System
+# Alert Detection System
 
-a technology designed to improve road safety by identifying when a driver is getting tired.  These systems can use cameras to monitor the driver's face for signs of drowsiness, like closed eyes or head nodding, or track steering patterns to detect changes that might indicate fatigue.  The system can then alert the driver with an audio or visual warning to pull over and rest.
+A full-stack alert/drowsiness detection system built with a Python backend and modern frontend.
+
+## Features
+- Real-time alert/drowsiness detection
+- Backend API support
+- Frontend interface for interaction
+- Organized project structure for development and deployment
+
+## Tech Stack
+- Python
+- FastAPI / Flask backend
+- Frontend (Next.js / React)
+- Computer Vision / ML libraries
+
+## Project Structure
+```text
+Alert_detection_System_/
+│
+├── backend/
+├── frontend/
+├── requirements.txt
+├── README.md
+└── .gitignore
